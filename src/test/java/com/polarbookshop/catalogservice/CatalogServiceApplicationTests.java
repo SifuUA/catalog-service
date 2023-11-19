@@ -28,7 +28,7 @@ class CatalogServiceApplicationTests {
                 .expectStatus().isCreated()
                 .expectBody(Book.class).value(actualBook -> {
                     assertThat(actualBook).isNotNull();
-                    assertThat(actualBook.isbn()).isEqualTo(expectedBook.isbn()+1);
+                    assertThat(actualBook.isbn()).isEqualTo(expectedBook.isbn());
                 });
     }
 }
