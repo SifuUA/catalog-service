@@ -20,4 +20,4 @@ spring:
       maximum-pool-size: 5
   sql:
     init:
-      mode:always
+      mode: always
